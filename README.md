@@ -1,7 +1,7 @@
 # SIC-XE-Assembler
 A Simple SIC/XE Assembler with GUI, can modify or change Operator Data and ASCII Character, written by C#.
 # Language
-Visul C#
+Visual C#
 # Framework
 .NET 4.5.1
 # OS

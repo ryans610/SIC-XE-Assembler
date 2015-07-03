@@ -41,6 +41,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.programName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.openProgram = new System.Windows.Forms.OpenFileDialog();
+            this.openOperators = new System.Windows.Forms.OpenFileDialog();
+            this.openASCII = new System.Windows.Forms.OpenFileDialog();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.saveST = new System.Windows.Forms.SaveFileDialog();
+            this.saveProgram = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -162,12 +172,87 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "SIC/XE Program Name :";
             // 
+            // openProgram
+            // 
+            this.openProgram.FileName = "SICXE";
+            // 
+            // openOperators
+            // 
+            this.openOperators.FileName = "Operators.dat";
+            // 
+            // openASCII
+            // 
+            this.openASCII.FileName = "ASCII.dat";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(412, 37);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(47, 23);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "View";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(412, 66);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(47, 23);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "View";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(412, 95);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(47, 23);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "View";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(412, 124);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(47, 23);
+            this.button5.TabIndex = 14;
+            this.button5.Text = "View";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(411, 153);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(47, 23);
+            this.button6.TabIndex = 15;
+            this.button6.Text = "View";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // saveST
+            // 
+            this.saveST.FileName = "STOUT.txt";
+            // 
+            // saveProgram
+            // 
+            this.saveProgram.FileName = "OUT.txt";
+            // 
             // MainForm
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 222);
+            this.ClientSize = new System.Drawing.Size(466, 222);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.programName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.ASCFile);
@@ -207,6 +292,16 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox programName;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.OpenFileDialog openProgram;
+        private System.Windows.Forms.OpenFileDialog openOperators;
+        private System.Windows.Forms.OpenFileDialog openASCII;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.SaveFileDialog saveST;
+        private System.Windows.Forms.SaveFileDialog saveProgram;
     }
 }
 

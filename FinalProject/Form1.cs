@@ -15,6 +15,9 @@ namespace FinalProject
         public MainForm()
         {
             InitializeComponent();
+            openProgram.InitialDirectory = Application.StartupPath;
+            openOperators.InitialDirectory = Application.StartupPath;
+            openASCII.InitialDirectory = Application.StartupPath;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,6 +31,46 @@ namespace FinalProject
                 CompileForm newForm = new CompileForm(this, InputFile.Text, OutputFile.Text, programName.Text, !string.IsNullOrEmpty(OPFile.Text), OPFile.Text, !string.IsNullOrEmpty(ASCFile.Text), ASCFile.Text, !string.IsNullOrEmpty(SymbolTableFile.Text), SymbolTableFile.Text);
                 this.Enabled = false;
                 newForm.Show();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (openProgram.ShowDialog() == DialogResult.OK)
+            {
+                InputFile.Text = openProgram.FileName;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (openOperators.ShowDialog() == DialogResult.OK)
+            {
+                OPFile.Text = openOperators.FileName;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (openASCII.ShowDialog() == DialogResult.OK)
+            {
+                ASCFile.Text = openASCII.FileName;
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (saveST.ShowDialog() == DialogResult.OK)
+            {
+                SymbolTableFile.Text = saveST.FileName;
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (saveProgram.ShowDialog() == DialogResult.OK)
+            {
+                OutputFile.Text = saveProgram.FileName;
             }
         }
     }
